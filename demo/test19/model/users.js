@@ -1,20 +1,3 @@
-## **Mongoose** **校验参数**
-
-```
-required : 表示这个数据必须传入 
-max: 验证数据的最大值（针对Number类型的数据）
-min: 验证数据的最小值（针对Number类型的数据）
-enum: 枚举类型，验证数据必须满足枚举值 ['xxx', ...]（针对String类型的数据）
-match: 验证数据必须符合正则的规则 （针对String类型的数据）
-maxlength：验证String类型的数据最大长度（针对String类型的数据）
-minlength：验证String类型的数据最小长度（针对String类型的数据）
-```
-
-
-
-## **Mongoose** **自定义的验证器**
-
-```js
 const mongoose = require("./db");
 
 // 定义 Schema
@@ -52,5 +35,3 @@ let UserSchema = mongoose.Schema({
 let User = mongoose.model("User", UserSchema, "users");
 
 module.exports = User;
-```
-
